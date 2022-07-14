@@ -25,13 +25,13 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #2E2424;
+  --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: 'Oxygen', "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -56,11 +56,15 @@ body {
   margin: 0;
   font-family: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: #fff;
+  background-image: url("../images/background1.JPG");
+ background-position: top;
+  background-size: cover;
+	padding-top: 50px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -77,7 +81,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
-
 
 p {
   margin-top: 0;
@@ -154,15 +157,14 @@ sup {
 }
 
 a {
-  color: #DD5457;
+  color: #007bff;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #E68A8C;
-  text-decoration: none;
-	text-shadow: 0px 0px 5px #F0C8C9;
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 a:not([href]) {
@@ -378,7 +380,6 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1.5rem;
-  font-weight: 300;
 }
 
 h5, .h5 {
@@ -407,16 +408,14 @@ h6, .h6 {
 }
 
 .display-3 {
-	margin-top: 70px;
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-4 {
-	margin-top: 30px;
-  font-size: 4rem;
-  font-weight: 450;
+  font-size: 3.5rem;
+  font-weight: 300;
   line-height: 1.2;
 }
 
@@ -1162,7 +1161,6 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
-	  	font-size: 200%;
   }
   .col-md-7 {
     -ms-flex: 0 0 58.333333%;
@@ -5251,14 +5249,14 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .jumbotron {
   padding: 1rem 1rem;
-  margin-bottom: .3rem;
+  margin-bottom: 1rem;
   background-color: none;
   border-radius: 0.3rem;
 }
 
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
   }
 }
 
@@ -6772,13 +6770,13 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #2E2424 !important;
+  background-color: #343a40 !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #2E2424 !important;
+  background-color: #1d2124 !important;
 }
 
 .bg-white {
